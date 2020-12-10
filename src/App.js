@@ -4,19 +4,23 @@ import axios from "axios";
 import Video from "./Video";
 
 const url = "https://api.nasa.gov/planetary/apod";
-const apiKey = "api_key=DEMO_KEY";
+const apiKey = "api_key=R1b6wcyislpIFTxjxIC7pBKrtZwut4XGToHWcTPg";
 function App() {
-  const [nasaData, setNasaData] = useState(null);
+  const [nasaData, setNasaData] = useState([]);
+
   useEffect(() => {
-    axios
-      .get(`${url}?${apiKey}`)
-      .then((res) => {
-        setNasaData(res.data);
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const fetchNasaData = () => {
+      axios
+        .get(`${url}?${apiKey}`)
+        .then((res) => {
+          setNasaData(res.data);
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+    fetchNasaData();
   }, []);
   return (
     <div className="App">
@@ -28,7 +32,7 @@ function App() {
         </span>
         !
       </p>
-      <Video video={video} src={video.url} />
+      <Video nasaData={nasaData} />
     </div>
   );
 }

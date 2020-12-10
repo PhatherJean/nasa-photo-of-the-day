@@ -1,15 +1,15 @@
 import React from "react";
-
+import Iframe from "react-iframe";
 export default function Video(props) {
-  const { video } = props;
+  const { nasaData } = props;
+  console.log();
   return (
-    <Video
-      width="960"
-      height="540"
-      src={video.url}
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen=""
-    />
+    <div>
+      <h1>{nasaData.title}</h1>
+      <p>{nasaData.date}</p>
+      <p>{nasaData.mediaType}</p>
+      <img src={nasaData.url} alt={nasaData.copyright} />
+      <p>{nasaData.explanation}</p>
+    </div>
   );
 }

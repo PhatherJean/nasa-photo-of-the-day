@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Video from "./Video";
+import Photo from "./Photo";
 
 const url = "https://api.nasa.gov/planetary/apod";
 const apiKey = "api_key=R1b6wcyislpIFTxjxIC7pBKrtZwut4XGToHWcTPg";
@@ -32,7 +32,7 @@ function App() {
         </span>
         !
       </p>
-      <Video nasaData={nasaData} />
+      <Photo nasaData={nasaData} />
     </div>
   );
 }

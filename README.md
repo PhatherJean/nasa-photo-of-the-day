@@ -1,6 +1,6 @@
 # Module Project: Component Side Effects- NASA APOD
 
-This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn. 
+This will be a two-module project. In it you will consume the NASA API to fetch the "Astronomy Photo Of The Day" or APOD. Once you fetch the data, you will build a few components that will render different pieces of data in your interface. After the second module (in the [DAY_TWO_README.md](DAY_TWO_README.md) file) you will re-style your app using one of the libraries you learn.
 
 ## Instructions
 
@@ -27,15 +27,14 @@ In this project you will build out a application to show the nasa photo of the d
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Download project dependencies by running `npm install`
-- [ ] Start up the app using `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your team lead as collaborator on Github.
+- [x] Clone your OWN version of the repository in your terminal
+- [x] Download project dependencies by running `npm install`
+- [x] Start up the app using `npm start`
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2: MVP
 
@@ -55,7 +54,7 @@ This project was put together using create-react-app (CRA). You will not need to
 
 - [ ] In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
 - [ ] Add an effect hook to handle the API call side effect.
-- [ ] Go to the [NASA APOD API docs](https://api.nasa.gov/#apod) and read through the docs to see how to make the API call.
+- [x] Go to the [NASA APOD API docs](https://api.nasa.gov/#apod) and read through the docs to see how to make the API call.
 - [ ] You don't _need_ an API key. However you may need one if you exceed the API request limits.
 - [ ] Using the endpoint given, fetch the data using `axios`.
 - [ ] In your `.then()` make sure to `console.log` the response so you can look at the shape of the data. 😃
@@ -106,11 +105,10 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 
 ## Submission Format
 
-
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge Branch into `main` (student's Repository).
 
-----
+---
 
- ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)
+## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)
